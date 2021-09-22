@@ -1,21 +1,25 @@
 @charset "UTF-8";
+@import 'el-castillo-design-system.scss';
 @import 'variables.scss';
-@import 'mixins.scss';
+@import 'animations.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
+@import 'mixins.scss';
 @import 'interactions.scss';
 @import 'about.scss';
 @import 'projects.scss';
 @import 'contact.scss';
-@import 'animations.scss';
-@import 'el-castillo-design-system.scss';
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   background-color: $primary-dark-200;
+
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   p {
   font-family: $secondary-font;
