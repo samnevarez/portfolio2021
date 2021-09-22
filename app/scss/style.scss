@@ -1,46 +1,177 @@
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
+@charset "UTF-8";
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'interactions.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'contact.scss';
+@import 'animations.scss';
+@import 'el-castillo-design-system.scss';
 
-*, *:before, *:after {
-  box-sizing: inherit;   
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  line-height: 1.3;
-  font-family: 'Lato', sans-serif;  
-  background-color: #202020;
-  background-image: url('/img/efe-yagiz-soysal-DGyVvAJNyPE-unsplash.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 30% center;
+  background-color: $primary-dark-200;
+
+  p {
+  font-family: $secondary-font;
+  font-size: .875rem;
+  color: rgba(255, 255, 255, 0.75) !important;
+  letter-spacing: 0.0625em;
+  line-height: 1.5rem;
+  }
 }
 
-h1, h2, h3 {
-  font-family: 'Lora', serif;
-  margin-top: 0;
-  line-height: 1.1;
-  margin-bottom: 0.5em;
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
-h1 {
-  font-size: calc(2rem + 2vw);
+@for $i from 1 through 4 {
+  h#{5 - $i} {
+      color: $white;
+      font-size: $i * 1rem;
+      font-family: $primary-font;
+      font-weight: 400;
+      line-height: $i * 1rem + .375rem;
+      text-transform: uppercase;
+  }
 }
 
-.box {
-  position: relative;
-  background-color: #3a5097;
-  color: #ffffff;
-  width: 90vw;
-  max-width: 700px;
-  padding: 2rem;
-  border-radius: 12px;
-  top: 15vh;
-  left: 5vw;
-  font-size: 1.25rem;
-  line-height: 1.5;
+@media screen and (max-width: 768px) {
+  @for $i from 1 through 4 {
+    h#{5 - $i} {
+        color: $white;
+        font-size: $i * .75rem;
+        font-family: $primary-font;
+        font-weight: 400;
+        line-height: $i * .75rem + .25rem;
+        text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $primary-dark-300;
+    border-bottom: 1px solid $primary-dark-800;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
+    .navbar-brand {
+    padding: .5rem 0;
+    color: darken($white, 20%);
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 1rem 1.5rem .8rem 1.5rem;
+    color: darken($white, 20%);
+    border-bottom: 0.25rem solid transparent;
+    transition: .5s;
+  }
+  #mainNav .nav-link:hover {
+    color: $secondary;
+  }
+  #mainNav .nav-link:active {
+    color: $secondary;
+  }
+  #mainNav.navbar-shrink {
+    background-color: $primary-dark-200;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: darken($white, 20%);
+    &:hover{
+      color: $secondary;
+    }
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: darken($white, 20%);
+    padding: 1rem 1.5rem .8rem 1.5rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: $secondary;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: $secondary;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: $secondary;
+    outline: none;
+    border-bottom: 0.25rem solid $secondary;
+  }
+}
+
+.bg-black {
+  background-color: $primary-dark-400 !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+footer {
+  padding: 3rem 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.ecborder{
+  border: 1px solid $primary-dark-600;
+}
+
+@media (max-width: 992px) {
+  .mb-mobile-2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section .card{
+  border: 0;
+  border-bottom: .25rem solid $primary-dark-600;
+}
+
+.contact-section .card hr{
+  border: 0;
+  border-bottom: .25rem solid $primary-dark-600;
+}
+
+.rotate-90-deg {
+  transform: rotate(90deg);
+}
+
+.rotate-180-deg{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .rotate-180-deg{
+    transform: rotate(0deg);
+  }
 }
