@@ -1,22 +1,51 @@
 {
-  "name": "gulp-browsersync",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "title": "Grayscale",
+  "name": "startbootstrap-grayscale",
+  "version": "5.0.8",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "A grayscale one page HTML theme for Bootstrap.",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://startbootstrap.com/template-overviews/grayscale",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "license": "MIT",
+  "author": "Start Bootstrap",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "jquery.easing": "^1.4.1"
+  },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "cssnano": "^4.1.10",
+    "browser-sync": "^2.26.14",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-header": "^2.0.9",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.1.0",
-    "gulp-terser": "^1.4.0",
-    "postcss": "^8.1.2"
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0"
   },
-  "dependencies": {}
+  "main": "gulpfile.js"
 }
