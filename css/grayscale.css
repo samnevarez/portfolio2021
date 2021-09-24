@@ -2940,7 +2940,7 @@
 /* mobile style */
 #mainNav {
   min-height: 56px;
-  background-color: #000033;
+  background-color: #00001a;
   border-radius: 0;
   border-bottom: 1px solid #000099;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
@@ -5631,7 +5631,7 @@ h1 {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #000033;
+    background-color: #00001a;
     border-bottom: 1px solid #0000b3;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
