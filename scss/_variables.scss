@@ -27,5 +27,5 @@ $primary-dark-900: darken($primary, 10%) !default;
 /* $secondary #8080ff */
 $secondary: lighten($primary, 55%) !default;
 
-$primary-font: 'Barlow Condensed', sans-serif !default;
-$secondary-font: 'Open Sans', sans-serif !default;
+$primary-font: 'Barlow Condensed', sans-serif;
+$secondary-font: 'Lato', sans-serif;

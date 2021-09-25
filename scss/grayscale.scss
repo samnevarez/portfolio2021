@@ -12,8 +12,8 @@
 @import 'el-castillo-design-system.scss';
 
 body {
-  font-family: $secondary-font;
   background-color: $primary-dark-200;
+  font-family: $secondary-font;
   p {
   font-size: .875rem;
   color: rgba(255, 255, 255, 0.75) !important;
@@ -52,6 +52,7 @@ body {
 
 @media (min-width: 992px) {
   #mainNav {
+    font-family: $secondary-font;
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
