@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@import 'animations.scss';
 @import 'variables.scss';
+@import 'bootstrap-css';
+@import 'animations.scss';
 @import 'mixins.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
@@ -11,9 +12,9 @@
 @import 'el-castillo-design-system.scss';
 
 body {
+  font-family: $secondary-font;
   background-color: $primary-dark-200;
   p {
-  font-family: $secondary-font;
   font-size: .875rem;
   color: rgba(255, 255, 255, 0.75) !important;
   letter-spacing: 0.0625em;
@@ -54,7 +55,7 @@ body {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: $primary-dark-200;
+    background-color: $primary-dark-300;
     border-bottom: 1px solid $primary-dark-800;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
