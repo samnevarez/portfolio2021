@@ -8569,34 +8569,16 @@ a.text-dark:hover, a.text-dark:focus {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  50% {
-    opacity: .5;
-    background: url(../img/sn-bg-large-0.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
+    z-index: -1;
   }
   100% {
     opacity: 1;
-    -webkit-animation: bg-animation 2.4s ease-in 0s;
-            animation: bg-animation 2.4s ease-in 0s;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background: url(../img/sn-bg-large-1.png);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     z-index: -1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
   }
 }
 
@@ -8608,34 +8590,16 @@ a.text-dark:hover, a.text-dark:focus {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  50% {
-    opacity: .5;
-    background: url(../img/sn-bg-large-0.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
+    z-index: -1;
   }
   100% {
     opacity: 1;
-    -webkit-animation: bg-animation 2.4s ease-in 0s;
-            animation: bg-animation 2.4s ease-in 0s;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background: url(../img/sn-bg-large-1.png);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     z-index: -1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
   }
 }
 
@@ -11539,8 +11503,6 @@ a.text-dark:hover, a.text-dark:focus {
 .masthead:before {
   content: ' ';
   opacity: 1;
-  -webkit-animation: bg-animation 2.4s ease-in 0s;
-          animation: bg-animation 2.4s ease-in 0s;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11550,8 +11512,6 @@ a.text-dark:hover, a.text-dark:focus {
   background-attachment: scroll;
   background-size: cover;
   z-index: -1;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
 }
 
 .btn {
