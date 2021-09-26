@@ -35,6 +35,10 @@
     z-index: -1;
   }
 
+  50% {
+    opacity: .8;  
+  }
+
   100% {
     opacity: 1;
     background: url(../img/sn-bg-large-1.png);

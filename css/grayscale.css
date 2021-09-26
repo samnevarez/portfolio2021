@@ -8571,6 +8571,9 @@ a.text-dark:hover, a.text-dark:focus {
     background-size: cover;
     z-index: -1;
   }
+  50% {
+    opacity: .8;
+  }
   100% {
     opacity: 1;
     background: url(../img/sn-bg-large-1.png);
@@ -8591,6 +8594,9 @@ a.text-dark:hover, a.text-dark:focus {
     background-attachment: scroll;
     background-size: cover;
     z-index: -1;
+  }
+  50% {
+    opacity: .8;
   }
   100% {
     opacity: 1;
@@ -11501,6 +11507,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead:before {
+  -webkit-animation: bg-animation 3s ease-in 0s;
+          animation: bg-animation 3s ease-in 0s;
   content: ' ';
   opacity: 1;
   position: absolute;
