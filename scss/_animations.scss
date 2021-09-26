@@ -32,17 +32,19 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+
   }
-  70% {
-    opacity: .7;
+
+  50% {
+    opacity: .5;
     background: url(../img/sn-bg-large-0.png);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+
   }
+
   100% {
     opacity: 1;
     background: url(../img/sn-bg-large-1.png);
@@ -50,8 +52,7 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
+
   }
 }
 
