@@ -1,13 +1,18 @@
+/* -- Margin and Padding Perameters-- */
 $margin-padding: (margin, padding); // margin: 0; padding: 0;
 $loc: (top, right, bottom, left); // margin-top, padding-top, etc.
-$ecRem-m: 0.1875; // mobile unit (25% smaller than desktop.
+
+/* -- MOBILE UNIT-- */
+$ecRem-m: 0.1875; // mobile unit (75% of Desktop size)
+
+/* -- Desktop UNIT -- */
 $ecRem-d: 0.25; // desktop unit (25% of 16px)
 
 /* -- MOBILE -- El Castillo Design System --*/
 
 @media screen and (max-width: 992px) {
 
- @for $i from 0 through 16 {
+ @for $i from 0 through 24 {
 
   // values for top and bottom (y axis)
   @each $mp in $margin-padding {
@@ -43,7 +48,7 @@ $ecRem-d: 0.25; // desktop unit (25% of 16px)
 
 /* -- DESKTOP -- El Castillo Design System --*/
 
-@for $i from 0 through 16 {
+@for $i from 0 through 24 {
 
  // values for top and bottom (y axis)
  @each $mp in $margin-padding {
@@ -76,11 +81,11 @@ $ecRem-d: 0.25; // desktop unit (25% of 16px)
  }
 }
 
-/* -- MOBILE ONLY -- MOBILE ONLY --*/
+/* -- SPECIFICTY TO MOBILE ONLY --*/
 
 @media screen and (max-width: 992px) {
 
- @for $i from 0 through 16 {
+ @for $i from 0 through 24 {
 
   // values for top and bottom (y axis)
   @each $mp in $margin-padding {
